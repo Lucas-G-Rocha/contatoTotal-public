@@ -73,45 +73,46 @@ SECRET_KEY=<Uma string segura para validação dos tokens>
 PORT=3000 # (opcional)
 ```
 
-🧪 Testando com Usuário Comum
-Usuários comuns (não-admins) têm seus logins gerados dinamicamente no momento do cadastro, e não são exibidos em nenhuma listagem ainda.
+## 🧪 Testando com Usuário Comum
 
-A senha padrão é a data de nascimento do aluno, sem as barras (ex: 01022003).
+Usuários comuns (não-admins) têm seus logins **gerados dinamicamente** no momento do cadastro, e **não são exibidos em nenhuma listagem ainda**.
 
-A interface do usuário comum ainda está incompleta e pouco estilizada, pois o foco atual do projeto está voltado para o painel administrativo.
+- A **senha padrão** é a **data de nascimento do aluno**, **sem as barras** (ex: `01022003`).
+- A interface do usuário comum ainda está **incompleta e pouco estilizada**, pois o foco atual do projeto está voltado para o **painel administrativo**.
 
-🚧 Status do Projeto
-O projeto ainda está em desenvolvimento e possui alguns bugs e limitações conhecidas, como:
+---
 
-Cadastro duplicado de usuários ainda não está bloqueado
+## 🚧 Status do Projeto
 
-Algumas páginas (como Aulas e Financeiro) ainda não foram finalizadas
+O projeto ainda está em desenvolvimento e possui alguns **bugs e limitações conhecidas**, como:
 
-Falta de um sistema de indexação mais eficiente no painel administrativo
+- ❌ Cadastro duplicado de usuários ainda não está bloqueado
+- ⏳ Algumas páginas (como **Aulas** e **Financeiro**) ainda não foram finalizadas
+- 🧭 Falta de um sistema de **indexação** mais eficiente no painel administrativo
+- 🎨 Necessita de **melhorias visuais e de usabilidade**, especialmente para o lado do **usuário comum**
 
-Necessita de melhorias visuais e de usabilidade, especialmente para o lado do usuário comum
+---
 
-🎯 Planejamentos Futuros
-Implementar pagamentos online com gateways como Stripe ou MercadoPago
+## 🎯 Planejamentos Futuros
 
-Sistema de login real para alunos
+Planos para a evolução do projeto incluem:
 
-Criação de um aplicativo móvel integrado à aplicação web
+- 💳 Implementar **pagamentos online** com gateways como Stripe ou MercadoPago
+- 🔐 Sistema de **login real para alunos**
+- 📱 Criação de um **aplicativo móvel** integrado à aplicação web
+- 📅 Página de **eventos e avisos**
+- 🛒 **Loja virtual** integrada ao sistema
+- 📊 Dashboard administrativo com:
+  - Fluxo de entrada e saída de alunos
+  - Fluxo de caixa
+  - Gerenciamento financeiro completo
+  - Relatórios e estatísticas detalhados
 
-Página de eventos e avisos
+---
 
-Loja virtual integrada ao sistema
+## 👨‍💻 Autor
 
-Dashboard administrativo com:
+Desenvolvido por **Lucas Gomes Da Rocha**.
+Fique a vontade para entrar em contato
+📞 **Contato:** (81) 98520-4507  
 
-Fluxo de entrada e saída de alunos
-
-Fluxo de caixa
-
-Gerenciamento completo de financeiro
-
-Relatórios e estatísticas
-
-👨‍💻 Autor
-Desenvolvido por Lucas Gomes Da Rocha.
-Se quiser entrar em contato -> (81) 98520-4507 <- ou acompanhar outros projetos, fique à vontade para visitar meu perfil no GitHub!
