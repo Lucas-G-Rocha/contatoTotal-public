@@ -64,7 +64,7 @@ Com os conhecimentos que possuía na época (meados de 2024) em **Node.js, JavaS
 
 ## 🔐 Variáveis de Ambiente
 
-O projeto utiliza variáveis de ambiente para funcionar corretamente. No `.env` você precisa definir:
+O projeto utiliza variáveis de ambiente para funcionar LOCALMENTE corretamente. No `.env` você precisa definir:
 
 ```env
 MONGO_URI=<URL do seu MongoDB>
