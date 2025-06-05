@@ -1,0 +1,174 @@
+<main id="mainInicio">
+    <div id="linkContainer">
+        <a class="linkInicio" id="atualizarLink" href="/atualizarDados">Atualizar Dados</a>
+        <a class="linkInicio" id="pagamentosLink" href="/pagamentos">Pagamentos</a>
+    </div>
+
+    <div id="containerInicio">
+        <p class="data situacao">{{#if situacao}}{{situacao}}{{else}}DataError{{/if}}</p>
+        <h2 id="nameTitle">{{#if nomeCompleto}}{{nomeCompleto}}{{else}}DataError{{/if}}</h2>
+
+        <div class="dataContainer">
+            <div class="articleContainer">
+
+                <div class="dataParagraphContainer">
+                    <p class="data">MENS. PENDENTES</p>
+                {{#if mensalidadesPendentes}}
+                    <p class="dataValue">{{mensalidadesPendentes}}</p>
+                {{else}}
+                <p class="dataValue">dataError</p>
+                {{/if}}
+                </div>
+
+                {{#if graduacao}}
+                <div class="dataParagraphContainer">
+
+                    <p class="data">GRADUAÇÃO</p>
+                    <p class="dataValue">{{graduacao}}</p>
+                </div>
+                {{/if}}
+
+                {{#if vencimento}}
+                <div class="dataParagraphContainer">
+                    <p class="data">VENCIMENTO</p>
+                    <p class="dataValue">{{vencimento}}</p>
+                </div>
+                {{/if}}
+
+                {{#if turma}}
+                <div class="dataParagraphContainer">
+                    <p class="data">TURMA</p>
+                    <p class="dataValue">{{turma}}</p>
+                </div>
+                {{/if}}
+
+                {{#if valorMensalidade}}
+                <div class="dataParagraphContainer">
+                    <p class="data">MENSALIDADE</p>
+                    <p class="dataValue">{{valorMensalidade}}</p>
+                </div>
+                {{/if}}
+
+                {{#if turno}}
+                <div class="dataParagraphContainer">
+                    <p class="data">TURNO</p>
+                    <p class="dataValue">{{turno}}</p>
+                </div>
+                {{/if}}
+
+
+            </div>
+
+            <div class="articleContainer">
+
+                {{#if email}}
+                <div class="dataParagraphContainer">
+                    <p class="data">EMAIL</p>
+                    <p class="dataValue">{{email}}</p>
+                </div>
+                {{/if}}
+                {{#if telefone}}
+                <div class="dataParagraphContainer">
+                    <p class="data">TELEFONE</p>
+                    <p class="dataValue">{{telefone}}</p>
+                </div>
+                {{/if}}
+
+                {{#if whatsapp}}
+                <div class="dataParagraphContainer">
+                    <p class="data">WHATSAPP</p>
+                    <p class="dataValue">{{whatsapp}}</p>
+                </div>
+                {{/if}}
+
+                {{#if dataDeNascimento}}
+                <div class="dataParagraphContainer">
+                    <p class="data">DATA DE NASCIMENTO</p>
+                    <p class="dataValue">{{{dataDeNascimento}}}</p>
+                </div>
+                {{/if}}
+
+                {{#if genero}}
+                <div class="dataParagraphContainer">
+                    <p class="data">GÊNERO</p>
+                    <p class="dataValue">{{genero}}</p>
+                </div>
+                {{/if}}
+
+            </div>
+
+            {{#if responsavelFinanceiro.nome}}
+            <div class="articleContainer">
+
+                {{#if responsavelFinanceiro.nome}}
+                <div class="dataParagraphContainer">
+                    <p class="data">RESPONSÁVEL FINANCEIRO</p>
+                    <p class="dataValue">{{responsavelFinanceiro.nome}}</p>
+                </div>
+                {{/if}}
+
+                {{#if telefone}}
+                <div class="dataParagraphContainer">
+                    <p class="data">TELEFONE</p>
+                    <p class="dataValue">{{telefone}}</p>
+                </div>
+                {{/if}}
+
+                {{#if parentesco}}
+                <div class="dataParagraphContainer">
+                    <p class="data">PARENTESCO</p>
+                    <p class="dataValue">{{parentesco}}</p>
+                </div>
+                {{/if}}
+
+
+            </div>
+            {{/if}}
+
+
+            {{#if contatoEmergencia.nome}}
+            <div class="articleContainer">
+
+                {{#if contatoEmergencia.nome}}
+                <div class="dataParagraphContainer">
+                    <p class="data">CONTATO DE EMERGENCIA</p>
+                    <p class="dataValue">{{contatoEmergencia.nome}}</p>
+                </div>
+                {{/if}}
+                
+                {{#if contatoEmergencia.telefone}}
+                <div class="dataParagraphContainer">
+                    <p class="data">TELEFONE</p>
+                    <p class="dataValue">{{contatoEmergencia.telefone}}</p>
+                </div>
+                {{/if}}
+                {{#if contatoEmergencia.parentesco}}
+                <div class="dataParagraphContainer">
+                    <p class="data">PARENTESCO</p>
+                    <p class="dataValue">{{contatoEmergencia.parentesco}}</p>
+                </div>
+                {{/if}}
+
+            </div>
+            {{/if}}
+
+            {{#if problemaDeSaude}}
+
+            {{#if problemaDeSaude}}
+                <div class="dataParagraphContainer">
+                    <p class="data">PROBLEMA DE SAÚDE</p>
+                    <p class="dataValue">{{{problemaDeSaude}}}</p>
+                </div> 
+                {{/if}}
+
+            {{/if}}
+
+        </div>
+    </div>
+</main>
+
+<script>
+    window.emailValido = {{ emailValido}}
+    console.log(window.emailValido)
+</script>
+<script src="../js/querValidarEmail.js"></script>

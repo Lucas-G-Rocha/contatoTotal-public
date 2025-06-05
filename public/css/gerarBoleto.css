@@ -1,0 +1,29 @@
+#mainGerarBoletos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#gerarBoletosContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: -300px;
+}
+label{
+    font-size: var(--font-mediumSize);
+    font-weight: bold;
+    margin-bottom: -1.5rem;
+}
+select{
+    padding: 10px;
+    font-weight: bold;
+}
+#gerarBoletos{
+    background-color: brown;
+    border: 1px solid black;
+    padding: 20px 60px;
+    cursor: pointer;
+}

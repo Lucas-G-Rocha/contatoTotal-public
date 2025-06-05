@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(46, 46, 46);
+}
+#mainEsqueceuASenha{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#esqueceuASenhaForm{
+    background-color: ghostwhite;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 90%;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 280px;
+    align-items: center;
+}
+#inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.label{
+    font-size: var(--font-mediumSize);
+}
+#emailInput{
+    text-align: center;
+    width: 90%;
+    padding: 5px 20px;
+}
+#emailInput:focus{
+    outline: none;
+}
+#submit{
+    max-width: 200px;
+    min-width: 100px;
+    width: 100%;
+    padding: 5px 15px;
+}
+

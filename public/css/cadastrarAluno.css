@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(56, 55, 55);
+}
+
+#mainCadastrarAluno{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#formCadastrarAluno{
+    margin-top: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: rgb(144, 141, 141);
+    padding: 50px;
+    border-radius: 10px;
+    min-width: 350px;
+    max-width: 1000px;
+}
+#tituloForm{
+    margin-bottom: 2rem;
+    font-size: var(--font-extraBigSize);
+    font-weight: bold;
+    white-space: nowrap;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.input{
+    border: none;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.inputContainer label{
+    font-size: var(--font-mediumSize);
+}
+.textArea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    resize: none;
+    text-align: center;
+    padding: 5px;
+}
+#submit{
+    padding: 10px 60px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.alunoInfo{
+    font-size: var(--font-normalSize);
+}
+#ultimosAdicionadosLink{
+    background-color: #EFEFEF;
+    color: black;
+    padding: 10px 60px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}

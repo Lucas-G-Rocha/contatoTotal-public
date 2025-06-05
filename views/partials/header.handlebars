@@ -1,0 +1,19 @@
+<header id="header">
+
+    <a id="titulo-header" class="titulo" href="/">Contato Total</a>
+
+    {{#if isLogged}}
+    <nav id="navbar">
+        <a id="logout" href="/logout">Deslogar</a>
+    </nav>
+    {{else}}
+    {{#if isLoginPage}}
+    
+    {{else}}
+    <nav id="navbar">
+        <a href="/login" id="loginLink">Login</a>
+    </nav>
+    {{/if}}
+    {{/if}}
+
+</header>

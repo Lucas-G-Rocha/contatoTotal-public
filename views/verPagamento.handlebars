@@ -1,0 +1,25 @@
+<main id="mainVerPagamento">
+    <div id="createPagamentoContainer">
+        <button id="createPagamento">Adicionar Pagamento</button>
+    </div>
+
+    <div id="pagamentosContainer">
+        {{#if isNull}}
+        <h1 id="pagamentoNull">Não há nenhum Pagamento</h1>
+
+        {{else}}
+        {{#each pagamentos}}
+
+        <div class="pagamentoContainer">
+            <p class="data">Status: {{this.status}}</p>
+            <p class="data">Nome: {{this.nome}}</p>
+            <p class="data">Mês: {{this.mes}}</p>
+            <p class="data">Valor: {{this.valor}} Reais</p>
+            <p class="data">Metódo de Pagamento: {{this.metodoDePagamento}}</p>
+            <p class="data">Data de Pagamento: {{this.dataDePagamento}}</p>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+</main>
+<script src="/js/criarPagamento.js"></script>

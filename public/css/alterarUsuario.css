@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(29, 28, 28);
+}
+#mainAlterarUsuario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 120px;
+}
+#alterarUsuarioForm{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3rem;
+    max-width: 1000px;
+    min-width: 280px;
+
+    background-color: #b2b2b2;
+    padding: 40px;
+    border-radius: 15px;
+}
+#inputsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+    align-items: center;
+}
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.labelInput{
+    font-size: var(--font-mediumSize);
+}
+.input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    max-width: 500px;
+    text-align: center;
+    padding: 1rem;
+}
+.input:focus {
+    outline: none;
+}
+.senhaDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+.mostrarEsconderSenha {
+    width: 25px;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    z-index: 5;
+}
+#submit {
+    cursor: pointer;
+    color: white;
+    background-color: #521515;
+    border: none;
+    box-shadow: none;
+    padding: 10px 70px;
+    font-size: var(--font-mediumSize);
+    max-width: 400px;
+    min-width: 70px;
+}

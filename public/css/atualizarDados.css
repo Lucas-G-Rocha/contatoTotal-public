@@ -1,0 +1,110 @@
+body {
+    /* background-color: rgb(33, 32, 32); */
+    background-image: url(../image/BGperfil.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#mainAtualizarDados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 320px;
+    padding-bottom: 250px;
+}
+
+#atualizarDadosForm {
+    background-color: #D9D9D9;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    min-width: 300px;
+    row-gap: 25px;
+
+}
+
+.containerDoContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.titleInput {
+    font-size: var(--font-mediumSize);
+}
+
+.input {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1.5px solid black
+}
+
+.textArea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    resize: none;
+    text-align: center;
+    padding: 5px;
+}
+
+#submit {
+    width: 40%;
+    height: 40px;
+    min-width: 70px;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+#userPasswordContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    max-width: 700px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.link{
+    color: black;
+    background-color: #D9D9D9;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    #mainAtualizarDados {
+        margin-top: 550px;
+        padding-bottom: 450px;
+    }
+}

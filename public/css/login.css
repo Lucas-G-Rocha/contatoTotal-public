@@ -1,0 +1,155 @@
+html {
+    color: #fff;
+}
+
+body {
+    background-image: url("../image/BGlogin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-color: #000;
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#header {
+    background: none;
+}
+
+#loginMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 54px;
+    width: 100%;
+}
+
+#loginTitle {
+    text-transform: uppercase;
+    font-size: var(--font-extraBigSize);
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+    width: 100%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    max-width: 500px;
+    text-align: center;
+}
+
+.input:focus {
+    outline: none;
+}
+
+#esqueceu-a-senha {
+    color: white;
+}
+
+#email,
+#password {
+    text-align: center;
+}
+
+.senhaDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.mostrarEsconderSenha {
+    width: 25px;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#loginSubmitContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit {
+    cursor: pointer;
+    color: white;
+    background-color: #521515;
+    border: none;
+    box-shadow: none;
+    padding: 10px 70px;
+    font-size: var(--font-mediumSize);
+}
+
+#esqueceu-a-senha {
+    text-decoration: none;
+    font-size: var(--font-mediumSize);
+}
+
+.label {
+    font-size: var(--font-mediumSize);
+}
+
+#validacaoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+
+@media (min-width: 700px) and (max-width: 900px) and (orientation: landscape) {
+    #container {
+        margin-top: 200px;
+    }
+
+    body::before {
+        height: 150%;
+    }
+
+}

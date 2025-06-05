@@ -1,0 +1,107 @@
+body{
+    background-color: #333030;
+}
+#mainRemoverAluno{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#containerDoDataContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 90%;
+    min-width: 300px;
+    max-width: 1000px;
+    align-items: center;
+    
+}
+.dataContainer{
+    background-color: ghostwhite;
+    padding: 50px;
+    border-radius: 20px;
+    width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 35px;
+    text-align: center;
+}
+.titleH2{
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.titleH2:first-of-type{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.situacao{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.data{
+    text-transform: capitalize;
+}
+.problemaDeSaude{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#removerBTN{
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px;
+    height: 40px;
+    cursor: pointer;
+
+}
+#removerAlunoContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    min-width: 300px;
+    max-width: 1000px;
+    align-items: center;
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 20px;
+    row-gap: 50px;
+    justify-content: center;
+    column-gap: 30px;
+}
+#titleConfirmarRemoverAluno{
+    width: 100%;
+    font-size: var(--font-mediumSize);
+}
+.confirmarRemoverAlunoBTN{
+    padding: 10px 100px;
+    cursor: pointer;
+}
+#SIMremoverAluno {
+    background-color: rgb(170, 10, 10);
+    border: 1px solid black;
+    color: white;
+}
+#NAOremoverAluno {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+}
+
+
+
+

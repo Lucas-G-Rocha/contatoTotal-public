@@ -1,0 +1,100 @@
+<main id="mainAtualizarDados">
+    <form action="#" id="editarAlunoForm">
+        <h1 id="titleForm">Atualizar Dados</h1>
+        <div class="containerDoContainer">
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Nome
+                </label>
+                    <input type="text" class="input" name="nome" value="{{aluno.nomeCompleto}}">
+            </div>
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Email
+                </label>
+                    <input type="email" class="input" name="email" value="{{aluno.emailData.email}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Data de Nascimento
+                </label>
+                    <input type="text" name="dataDeNascimento" class="input" value="{{{aluno.dataDeNascimento}}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Telefone
+                </label>
+                    <input type="text" name="telefone" class="input" value="{{aluno.telefone}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Whatsapp
+                </label>
+                    <input type="text" name="whatsapp" class="input" value="{{aluno.whatsapp}}">
+            </div>
+        </div>
+
+        <div class="containerDoContainer">
+            <h3 class="titleInput">Responsável Financeiro</h3>
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Nome
+                </label>
+                    <input type="text" class="input" name="nomeResponsavel" value="{{aluno.responsavelFinanceiro.nome}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Telefone
+                </label>
+                    <input type="text" name="telefoneResponsavel" class="input" value="{{aluno.responsavelFinanceiro.telefone}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Parentesco
+                </label>
+                    <input type="text" name="parentescoResponsavel" class="input" value="{{aluno.responsavelFinanceiro.parentesco}}">
+            </div>
+
+        </div>
+
+        <div class="containerDoContainer">
+            <h3 class="titleInput">Contato de Emergência</h3>
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Nome
+                </label>
+                    <input type="text" name="nomeContatoEmergencia" class="input" value="{{aluno.contatoEmergencia.nome}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Telefone
+                </label>
+                    <input type="text" name="telefoneContatoEmergencia" class="input" value="{{aluno.contatoEmergencia.telefone}}">
+            </div>
+
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Parentesco
+                </label>
+                    <input type="text" name="parentescoContatoEmergencia" class="input" value="{{aluno.contatoEmergencia.parentesco}}">
+            </div>
+
+        </div>
+            <div class="inputContainer">
+                <label class="labelInput">
+                    Problema de Saúde
+                </label>
+                    <textarea type="text" name="problemaDeSaude" class="input textArea">{{{aluno.problemaDeSaude}}}</textarea>
+            </div>
+        <input type="submit" value="Atualizar" id="submit">
+        <div id="validacaoContainer"></div>
+    </form>
+</main>
+
+<script src="/js/editarAluno.js"></script>

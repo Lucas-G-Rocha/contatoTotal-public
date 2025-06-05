@@ -1,0 +1,38 @@
+<main id="mainAlterarSenha">
+    <form action="#" id="alterarSenhaForm">
+        <h1 id="tituloAlterarSenha">Alterar Senha</h1>
+
+        <div id="inputsContainer">
+            <div class="inputContainer">
+                <label for="usuario" class="labelInput">Nome de Usuario</label>
+                <input type="text" name="usuario" class="input" id="usuario" placeholder="Digite aqui o usuario" required>
+            </div>
+
+            <div class="inputContainer">
+                <label for="senhaAtual" class="labelInput">Senha Atual</label>
+                <div class="senhaDiv">
+                    <input name="senhaAtual" type="password" class="input" id="senhaAtual" placeholder="Digite sua Senha"
+                        minlength="8" required>
+                    <img src="../image/olho-cego.svg" alt="mostrar senha botão" class="mostrarEsconderSenha"
+                        id="mostrarSenhaAtual" onclick="mostrarSenhaAtualFunction()">
+                </div>
+            </div>
+
+            <div class="inputContainer">
+                <label for="novaSenha" class="labelInput">Nova Senha</label>
+                <div class="senhaDiv">
+                    <input name="novaSenha" type="password" class="input" id="novaSenha" placeholder="Digite a Nova Senha"
+                        minlength="8" required>
+                    <img src="../image/olho-cego.svg" alt="mostrar senha botão" class="mostrarEsconderSenha"
+                        id="mostrarNovaSenha" onclick="mostrarNovaSenhaFunction()">
+                </div>
+            </div>
+                <input type="submit" id="submit">
+
+        </div>
+        <div id="validacaoContainer"></div>
+    </form>
+</main>
+
+<script src="/js/mostrarEsconderSenhaDoAlterarSenha.js"></script>
+<script src="/js/alterarSenhaClient.js"></script>

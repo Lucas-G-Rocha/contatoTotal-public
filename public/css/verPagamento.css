@@ -1,0 +1,102 @@
+#mainVerPagamento{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    row-gap: 50px;
+}
+#createPagamentoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#createPagamento{
+    border: 1px solid black;
+    width: 30%;
+    max-width: 600px;
+    min-width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+.ocultar > #pagamentoNull, .ocultar > .pagamentoContainer {
+    display: none;
+}
+#pagamentosContainer{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+#formContainerPagamentos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-width: 300px;
+    max-width: 1000px;
+}
+#titlePagamento{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.inputContainer{
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.inputPagamento{
+    text-align: center;
+    width: 40%;
+    min-width: 200px;
+    height: 30px;
+}
+#submitButton{
+    width: 300px;
+    margin-top: 20px;
+    height: 50px;
+}
+.pagamentoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 220, 220);
+    width: 60%;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    row-gap: 10px;
+}
+.data{
+    font-size: 1.5rem;
+}
+.buttonPagamentoContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 60%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.editarPagamento, .removerPagamento{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}

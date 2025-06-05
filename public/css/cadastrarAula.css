@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(49, 48, 48);
+}
+
+#mainCadastrarAula{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tituloForm{
+    text-transform: uppercase;
+}
+#formCadastrarAula{
+    background-color: #D9D9D9;
+    width: 90%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    border-radius: 20px;
+    row-gap: 30px;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.inputCheckboxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+.labelInput{
+    font-size: var(--font-mediumSize);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.checkboxText{
+    font-size: var(--font-normalSize);
+    text-transform: capitalize;
+    
+}
+.checkboxContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+.input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+#submit{
+    padding: 10px 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#containerDados{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    text-align: center;
+}
+.novaAulaDado{
+    margin-bottom: 10px;
+    font-size: var(--font-normalSize);
+}
+.reloadButton{
+    margin-top: 20px;
+}
+
+

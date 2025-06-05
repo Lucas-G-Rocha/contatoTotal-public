@@ -1,0 +1,71 @@
+
+    
+
+    <main id="loginMain">
+        <div id="container">
+            <h1 
+            class="tituloLarge" 
+            id="loginTitle"
+            >LOGIN</h1>
+            
+            <form action="#" class="form" id="formLogin">
+                <div class="inputContainer" id="userContainer">
+                    <label 
+                    for="usuario" 
+                    class="label" 
+                    id="user"
+                    >Usuario</label>
+
+                    <input 
+                    name="usuario"
+                    type="text" 
+                    class="input" 
+                    id="usuario"
+                    placeholder="Digite seu Usuario"
+                    required>
+                </div>
+
+                <div class="inputContainer" id="passwordContainer">
+                    <label 
+                    for="password" 
+                    class="label" 
+                    id="passwordLabel"
+                    >Senha</label>
+                    <div class="senhaDiv">
+                        
+                        <input
+                        name="senha"
+                        type="password"
+                        class="input"
+                        id="password"
+                        placeholder="Digite sua Senha"
+                        minlength="8"
+                        required>
+                        
+                        <img src="../image/olho-cego.svg" alt="mostrar senha botão" class="mostrarEsconderSenha"
+                        id="mostrarSenha" onclick="mostrarEsconderSenha()">
+                    </div>
+                    
+                </div>
+
+                <div class="submitContainer" id="loginSubmitContainer">
+                    
+                    <input type="submit" id="submit" value="Entrar">
+
+                    <a 
+                    href="/esqueceuASenha" 
+                    class="link" 
+                    id="esqueceu-a-senha"
+                    >Esqueceu a Senha?</a>
+                    
+                    <div id="validacaoContainer"></div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="../js/mostrarEsconderSenha.js"></script>
+    <script src="../js/submitLogin.js"></script>

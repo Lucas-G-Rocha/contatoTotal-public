@@ -1,0 +1,33 @@
+<main id="mainAlterarUsuario">
+    <form action="#" id="alterarUsuarioForm">
+        <h1 id="tituloAlterarUsuario">Alterar Nome De Usuario</h1>
+
+        <div id="inputsContainer">
+            <div class="inputContainer">
+                <label for="usuario" class="labelInput">Nome de Usuario Atual</label>
+                <input type="text" name="usuario" class="input" id="usuario" placeholder="Digite aqui o usuario atual" required>
+            </div>
+
+            <div class="inputContainer">
+                <label for="novoUsuario" class="labelInput">Novo Nome de Usuario</label>
+                <input type="text" class="input" name="novoUsuario" id="novoUsuario" placeholder="Digite aqui o novo nome de usuario" required>
+            </div>
+
+            <div class="inputContainer">
+                <label for="password" class="labelInput">Senha</label>
+                <div class="senhaDiv">
+                    <input name="senha" type="password" class="input" id="password" placeholder="Digite sua Senha"
+                        minlength="8" required>
+                    <img src="../image/olho-cego.svg" alt="mostrar senha botão" class="mostrarEsconderSenha"
+                        id="mostrarSenha" onclick="mostrarEsconderSenha()">
+                </div>
+            </div>
+                <input type="submit" id="submit">
+
+        </div>
+        <div id="validacaoContainer"></div>
+    </form>
+</main>
+
+<script src="/js/mostrarEsconderSenha.js"></script>
+<script src="/js/alterarUsuarioClient.js"></script>

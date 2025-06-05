@@ -1,0 +1,126 @@
+<main id="mainRemoverAluno">
+    <div id="containerDoDataContainer">
+        
+        <div class="dataContainer">
+                        <p class="situacao">
+                            {{#if aluno.situacao}}
+                            {{aluno.situacao}}
+                            {{else}}dado Inexistente{{/if}}</p>
+                        <h2 class="titleH2 nomeCompleto">{{#if aluno.nomeCompleto}}
+                            {{aluno.nomeCompleto}}
+                            {{else}}dado Inexistente{{/if}}</h2>
+        
+                        <div class="dataIndividualContainer">
+                            <p class="title">Mensalidades Pendentes</p>
+                            <p class="data">
+                                {{#if aluno.mensalidadesPendentes}}{{aluno.mensalidadesPendentes}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Data de Matricula</p>
+                            <p class="data">{{#if aluno.createdAt}}
+                                {{aluno.createdAt}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Turma</p>
+                            <p class="data">{{#if aluno.turma}}
+                                {{aluno.turma}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Turno</p>
+                            <p class="data">{{#if aluno.turno}}
+                                {{aluno.turno}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Graduação</p>
+                            <p class="data">{{#if aluno.graduacao}}
+                                {{aluno.graduacao}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Dia Do Vencimento</p>
+                            <p class="data">{{#if aluno.vencimento}}
+                                {{aluno.vencimento}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Valor Da Mensalidade</p>
+                            <p class="data">{{#if aluno.valorMensalidade}}
+                                {{aluno.valorMensalidade}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Telefone</p>
+                            <p class="data">{{#if aluno.telefone}}
+                                {{aluno.telefone}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Whatsapp</p>
+                            <p class="data">{{#if aluno.whatsapp}}
+                                {{aluno.whatsapp}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Data de Nascimento</p>
+                            <p class="data">{{#if aluno.dataDeNascimento}}
+                                {{{aluno.dataDeNascimento}}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+        
+        
+                        <h2 class="titleH2">Responsável Financeiro</h2>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Nome</p>
+                            <p class="data">{{#if aluno.responsavelFinanceiro.nome}}
+                                {{aluno.responsavelFinanceiro.nome}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Telefone</p>
+                            <p class="data">{{#if aluno.responsavelFinanceiro.telefone}}
+                                {{aluno.responsavelFinanceiro.telefone}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Parentesco</p>
+                            <p class="data">{{#if aluno.responsavelFinanceiro.parentesco}}
+                                {{aluno.responsavelFinanceiro.parentesco}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+        
+                        <h2 class="titleH2">Contato De Emergência</h2>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Nome</p>
+                            <p class="data">{{#if aluno.contatoEmergencia.nome}}
+                                {{aluno.contatoEmergencia.nome}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Telefone</p>
+                            <p class="data">{{#if aluno.contatoEmergencia.telefone}}
+                                {{aluno.contatoEmergencia.telefone}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer">
+                            <p class="title">Parentesco</p>
+                            <p class="data">{{#if aluno.contatoEmergencia.parentesco}}
+                                {{aluno.contatoEmergencia.parentesco}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                        <div class="dataIndividualContainer problemaDeSaude">
+                            <p class="title">Problema de Saúde</p>
+                            <p class="data">{{#if aluno.problemaDeSaude}}
+                                {{{aluno.problemaDeSaude}}}
+                                {{else}}dado Inexistente{{/if}}</p>
+                        </div>
+                    </div>
+                    <button id="removerBTN">Remover Aluno</button>
+    </div>
+    <div id="validacaoContainer"></div>
+</main>
+
+<script src="/js/removerAlunoCliente.js"></script>

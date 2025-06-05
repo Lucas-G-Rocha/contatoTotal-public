@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-text: "Inter, Arial, Helvetica, sans-serif";
+    --secondFont: "krona One";
+    --font-normalSize: 12px;
+    --font-mediumSize: 16px;
+    --font-bigSize: 20px;
+    --font-extraBigSize: 30px;
+    --color-pageWhite: #EAEAEA;
+
+    --input-color: #EAEAEA;
+    --input-textColor: #6B6767;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: var(--font-text);
+    font-size: var(--font-normalSize);
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-pageWhite);
+    height: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #000;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+#titulo-header,
+#logout,
+#loginLink {
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+}
+
+#titulo-header {
+    font-size: var(--font-mediumSize);
+    font-family: var(--secondFont);
+    color: #B41B1B;
+}
+
+#loginLink,
+#logout {
+    background-color: #521515;
+    padding: 1rem 2.5rem;
+    color: white;
+    font-family: var(--secondFont);
+    border-radius: 10px;
+}
+
+.validacao {
+    font-size: var(--font-mediumSize);
+    color: red;
+    text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 301px) {
+    :root {
+        --font-normalSize: 10px;
+        --font-mediumSize: 14px;
+        --font-bigSize: 16px;
+    }
+}
+
+@media (min-width: 501px) {
+
+    #titulo-header,
+    #logout,
+    #loginLink {
+        margin: 0 35px 0 35px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 801px) {
+
+    #titulo-header,
+    #logout,
+    #loginLink {
+        margin: 0 105px 0 105px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1171px) {
+    :root {
+        --font-normalSize: 12px;
+        --font-mediumSize: 16px;
+        --font-bigSize: 18px;
+    }
+
+    #titulo-header,
+    #logout,
+    #loginLink {
+        margin: 0 145px 0 145px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1441px) {
+    :root {
+        --font-normalSize: 14px;
+        --font-mediumSize: 18px;
+        --font-bigSize: 20px;
+    }
+}
+
+@media (min-width: 2000px) {
+    :root {
+        --font-normalSize: 16px;
+        --font-mediumSize: 20px;
+        --font-bigSize: 22px;
+    }
+
+    #header {
+        height: 70px;
+    }
+}

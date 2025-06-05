@@ -1,0 +1,113 @@
+<main id="mainCadastrarAluno">
+
+    <form action="#" id="formCadastrarAluno">
+        <h1 id="tituloForm">Cadastrar Aluno</h1>
+
+        <div class="inputContainer">
+            <label for="" >**Nome Completo**</label>
+            <input type="text" name="nomeCompleto" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Email</label>
+            <input type="email" name="email" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Data de Nascimento**</label>
+            <input type="text" name="dataDeNascimento" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Genero**</label>
+            <select name="genero" class="input">
+                <option value="masculino" selected>Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Telefone**</label>
+            <input type="text" name="telefone" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Whatsapp**</label>
+            <input type="text" name="whatsapp" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Turma**</label>
+            <select name="turma" class="input">
+                <option value=""></option>
+                {{#each turma}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Turno**</label>
+            <select name="turno" class="input">
+                <option value=""></option>
+                <option value="manhã">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Graduação**</label>
+            <select name="graduacao" class="input">
+                <option value=""></option>
+                <option value="branco">Branco</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="amarelo-branco">Amarelo-Branco</option>
+                <option value="verde">Verde</option>
+                <option value="verde-branco">Verde-Branco</option>
+                <option value="azul">Azul</option>
+                <option value="azul-branco">Azul-Branco</option>
+                <option value="marrom">Marrom</option>
+                <option value="marrom-branco">Marrom-Branco</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="vermelho-branco">Vermelho-Branco</option>
+                <option value="preto">Preto</option>
+                <option value="preto-branco">Preto-Branco</option>
+            </select>
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Dia do vencimento**</label>
+            <input type="text" name="vencimento" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >**Valor da Mensalidade**</label>
+            <input type="text" name="valorMensalidade" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Nome do Responsável Financeiro</label>
+            <input type="text" name="nomeResponsavelFinanceiro" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Telefone do Responsável Financeiro</label>
+            <input type="text" name="telefoneResponsavelFinanceiro" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Parentesco do Responsável Financeiro</label>
+            <input type="text" name="parentescoResponsavelFinanceiro" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Nome do Contato de Emergência</label>
+            <input type="text" name="nomeContatoEmergencia" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Telefone do Contato de Emergência</label>
+            <input type="text" name="telefoneContatoEmergencia" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Parentesco do Contato de Emergência</label>
+            <input type="text" name="parentescoContatoEmergencia" class="input">
+        </div>
+        <div class="inputContainer">
+            <label for="" >Problema de Saúde</label>
+            <textarea type="text" name="problemaDeSaude" class="input textArea"></textarea>
+        </div>
+        <input type="submit" value="Cadastrar Aluno" id="submit">
+        
+        <div id="validacaoContainer"></div>
+    </form>
+
+</main>
+
+<script src="../js/cadastrarAluno.js"></script>

@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(49, 48, 48);
+    margin: 0;
+    /* Remove as margens para um layout de tela cheia */
+}
+
+#mainAdminPerfil {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 50px;
+}
+
+#linkContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.linkSection {
+    display: flex;
+    flex-flow: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.titles {
+    width: 100%;
+    color: gainsboro;
+}
+
+.functionLinks {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    color: black;
+    background-color: ghostwhite;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 40px;
+    min-width: 200px;
+}
